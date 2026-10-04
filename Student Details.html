@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/Shani/.codex/MY%20WEBSITE/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Student Details</title>
+</head>
+
+<body>
+    <fildset>
+        <legend>Details</legend>
+
+        <label>Student Name:</label>
+        <input type="text" id="name"><br><br>
+        <label>Roll number:</label>
+        <input type="text" id="Roll"><br><br>
+        <label>Father name:</label>
+        <input type="text" id="Father"><br><br>
+        <label>Mother name:</label>
+        <input type="text" id="mother"><br><br>
+        <label>Collage name:</label>
+        <input type="text" id="collage"><br><br>
+        <label>Year name:</label>
+        <input type="text" id="year"><br><br>
+        <label>Samastar name:</label>
+        <input type="text" id="samestar"><br><br>
+        <label>City name:</label>
+        <input type="text" id="city"><br><br>
+        <label>Subject:</label>
+        <input type="text" id="subject"><br><br>
+
+        <button onclick="showDetails()">Submit</button>
+
+        <p id="result"></p>
+    </fildset>
+
+    <script>
+        function showDetails() {
+            let name =
+                document.getElementById("name").value;
+            let roll =
+                document.getElementById("roll").value;
+                let father =
+                document.getElementById("father").value;    
+            let mother =
+                document.getElementById("mother").value;
+            let collage =
+                document.getElementById("collage").value;
+            let year =
+                document.getElementById("year").value;
+            let samestar =
+                document.getElementById("samestar").value;
+            let city =
+                document.getElementById("city").value;
+            let subject =
+                document.getElementById("subject").value;
+
+            document.getElementById("result").innerHTML =
+                "Student Name: " + name + "<br>" +
+                "roll: " + roll + "<br>" +
+                "father: " + father + "<br>" +
+                "mother: " + mother + "<br>" +
+                "collage: " + collage + "<br>" +
+                "year: " + year + "<br>" +
+                "samestar: " + samestar + '<br>' +
+                "city: " + city + "<br>" +
+                "Subject: " + subject;
+
+        }
+    </script>
+
+
+ </body></html>
